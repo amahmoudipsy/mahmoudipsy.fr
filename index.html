@@ -16,7 +16,10 @@
 body{margin:0}
 p{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 a{color:#3E6B63}a:hover{color:#2B4C46}
+.only-mobile{display:none !important}
 @media (max-width: 640px){
+.only-mobile{display:inline-flex !important}
+.only-desktop{display:none !important}
 h1{font-size:34px !important}
 h2{font-size:27px !important}
 section{padding-top:56px !important;padding-bottom:56px !important}
@@ -152,7 +155,8 @@ img{height:auto !important;max-height:300px}
 </div>
 <div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 12px; align-items: flex-start">
 <a href="https://www.doctolib.fr/psychologue/lille/ahmed-mahmoudi-lille" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #0596DE; color: #FFFFFF; font-weight: 600; font-size: 18px; border-radius: 10px; text-decoration: none">Prendre rendez-vous<img src="https://pro.doctolib.fr/external_button/doctolib-white-transparent.png" alt="Doctolib" style="height: 18px; width: auto; margin-left: 10px; vertical-align: middle"></a>
-<p style="margin: 0; font-size: 15px; color: #4A433C">Questions par SMS : <strong>06 50 19 00 63</strong></p>
+<p class="only-desktop" style="margin: 0; font-size: 15px; color: #4A433C">Questions par SMS : <strong>06 50 19 00 63</strong></p>
+<a class="only-mobile" href="sms:+33650190063" style="align-items: center; min-height: 48px; padding: 0 24px; border: 1.5px solid #3E6B63; color: #2B4C46; font-weight: 600; border-radius: 10px; text-decoration: none">Une question ? Envoyer un SMS</a>
 </div>
 </section>
 
